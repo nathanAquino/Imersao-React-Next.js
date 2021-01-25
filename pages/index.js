@@ -40,7 +40,7 @@ const QuizContainer = styled.div`
 //parte visual do projeto
 export default function Home() {
   return (
-    <QuizBackground backgroundImgage= {db.bg}>
+    <QuizBackground backgroundImage= {db.bg}>
       <QuizContainer>
         <QuizLogo/>
         <Widget>
