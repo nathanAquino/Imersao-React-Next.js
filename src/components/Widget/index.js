@@ -1,13 +1,11 @@
-import styled from 'styled-components'// blocos do quiz
+import styled from 'styled-components';// blocos do quiz
 
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.secondary};
-  background-color: ${({ theme }) => {
-    return theme.colors.mainBg;
-  }};
-  border-radius: 4px;
+  background-color: ${({ theme }) => theme.colors.mainBg};
+  border-radius: 10px;
   overflow: hidden;
   h1, h2, h3 {
     font-size: 16px;
@@ -20,6 +18,19 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
+  /* button {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #FFF;
+    padding: .6rem;
+    background: #ccc;
+    border: none;
+    border-radius: .2rem;
+    transition: all .2s;
+    cursor: pointer;
+    &:hover {
+      background: #c1c1c1;
+    } */
 `;
 
 Widget.Content = styled.div`
