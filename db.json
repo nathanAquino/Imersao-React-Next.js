@@ -1,8 +1,9 @@
 {
   "bg": "https://cdn.pocket-lint.com/r/s/970x/assets/images/141346-games-review-review-assassin-s-creed-origins-gameplay-preview-image1-0thtzsbqel-jpg.webp",
   "bg2":"https://theflame.unishanoi.org/wp-content/uploads/2014/12/Assassin.jpg",
+  "ico": "https://cdn.worldvectorlogo.com/logos/assassins-creed-1.svg",
   "title": "Quiz Assasin's Creed",
-  "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
+  "description": "Teste os seus conhecimentos sobre Assasin's Creed e vamos ver quantos anos você consegue corrigir",
   "questions": [
     {
       "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
@@ -32,10 +33,10 @@
   ],
   "theme": {
     "colors": {
-      "primary": "#0d48a17b",
-      "secondary": "#e53935",
-      "mainBg": "#171B35",
-      "contrastText": "#FFFFFF",
+      "primary": "#B9BDBE",
+      "secondary": "#BFD5E0",
+      "mainBg": "#A3161D",
+      "contrastText": "#292526",
       "wrong": "#FF5722",
       "success": "#4CAF50"
     },

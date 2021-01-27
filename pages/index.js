@@ -9,6 +9,8 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHuberCorner from '../src/components/GitHuberCorner';
 import QuizLogo from '../src/components/QuizLogo';
+import Button from '../src/components/Button';
+import Name from '../src/components/Name';
 
 // const Title = styled.h1` nao sera mais necessario
 //  font-size: 50px;
@@ -33,8 +35,8 @@ import QuizLogo from '../src/components/QuizLogo';
 const QuizContainerForm = styled.div` 
   width: 90%; //largura
   max-width: 280px; //comprimento
-  padding-top: 125px; //altura
-  margin: auto 10%;
+  padding-top: 225px; //altura
+  margin: auto 1%;
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;
@@ -43,19 +45,20 @@ const QuizContainerForm = styled.div`
 
 const QuizContainer = styled.div` 
   width: 100%;
-  max-width: 350px; //comprimento
+  max-width: 300px; //comprimento
   padding-top: -5px; //altura
-  margin: auto 10%;
+  margin: auto 1%;
   @media screen and (max-width: 400px) {
     margin: auto;
-    padding: 15px;
+    padding: 95px;
   }
 `;
-
+// Ai adiciona isso aqui no pack.json:scripts "eslint:init": "eslint --init"
+// e para rodar no terminal npm run eslint:init
 // parte visual do projeto
 export default function Home() {
-  const router = useRouter();
-  const [name, setName] = React.useState('');
+  const router = useRouter(); // hooks
+  const [name, setName] = React.useState(''); // hooks
 
   return (
     <QuizBackground backgroundImage={db.bg2}>
@@ -78,32 +81,40 @@ export default function Home() {
               // router manda para a proxima pagina
             }}
             >
-              <input
+              <Name
+                onChange={(event) => {
+                  setName(event.target.value);
+                }}
+                placeholder="Digite seu nome"
+              />
+              {/* <input
                 onChange={function evento(infoDoEvento) {
                   // State
                   // name = infoDoEvento.target.value;
                   setName(infoDoEvento.target.value);
                 }}
                 placeholder="Diz ai seu nome"
-              />
-              <button type="submit" disabled={name.length === 0}>
+              /> */}
+              <Button type="submit" disabled={name.length === 0}>
                 Jogar
-              </button>
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
       </QuizContainerForm>
       <QuizContainer>
         <Widget>
-          <Widget.Content>
+          <Widget.Header>
             <h1>Quiz dos brothers</h1>
+          </Widget.Header>
+          <Widget.Content>
             <ul>
-              <li><a href="https://quiz-imersao-react.vercel.app">Data Science Quiz</a></li>
-              <li><a href="https://imersao-react-alura.malufell.vercel.app">How I Met Your Mother!</a></li>
+              <li><a href="https://thelastofus-quiz.rhafaelcosta.vercel.app/">The Last of US</a></li>
+              <li><a href="https://quiz-games.gabrielwolf-dev.vercel.app/">Quiz de Games</a></li>
               <li><a href="https://quiz-padrao-projetos.thassya.vercel.app">Padrão de Projetos</a></li>
               <li><a href="https://aluraquiz-base.henrique1818.vercel.app">Vingadores</a></li>
             </ul>
-            <p>Surreal o que eles fizeram</p>
+            <p>SURREAL O QUE ELES FIZERAM!!</p>
           </Widget.Content>
         </Widget>
         <Footer />

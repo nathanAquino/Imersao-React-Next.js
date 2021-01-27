@@ -37,13 +37,6 @@ export default function Home() {
           </Widget.Content>
         </Widget>
 
-        <Widget>
-          <Widget.Content>
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
-          </Widget.Content>
-        </Widget>
         <Footer />
       </QuizContainer>
       <GitHuberCorner projectUrl="https://github.com/nathanAquino" />
