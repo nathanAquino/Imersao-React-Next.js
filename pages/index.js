@@ -35,6 +35,7 @@ import QuizContainer from '../src/components/QuizContainer';
 // Ai adiciona isso aqui no pack.json:scripts "eslint:init": "eslint --init"
 // e para rodar no terminal npm run eslint:init
 // parte visual do projeto
+
 export default function Home() {
   const router = useRouter(); // hooks
   const [name, setName] = React.useState(''); // hooks

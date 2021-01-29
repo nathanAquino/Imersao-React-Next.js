@@ -1,20 +1,21 @@
 {
   "bg": "https://cdn.pocket-lint.com/r/s/970x/assets/images/141346-games-review-review-assassin-s-creed-origins-gameplay-preview-image1-0thtzsbqel-jpg.webp",
   "bg2":"https://theflame.unishanoi.org/wp-content/uploads/2014/12/Assassin.jpg",
+  "bg3":"https://steamuserimages-a.akamaihd.net/ugc/448490901528242730/AFD44E23410D73628A6D6CCA431B4C0AFD330A34/",
   "ico": "https://cdn.worldvectorlogo.com/logos/assassins-creed-1.svg",
   "title": "Quiz Assasin's Creed",
   "description": "Teste os seus conhecimentos sobre Assasin's Creed e vamos ver quantos anos você consegue corrigir",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
+      "image": "https://conteudo.imguol.com.br/c/entretenimento/70/2020/05/14/assassins-creed-1589491924728_v2_600x1.jpg",
+      "title": "Qual a desenvolvedora do Assasine's Creed",
       "description": "Essa é pra aquecer",
-      "answer": 2,
+      "answer": 0,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "Ubisoft",
+        "Rockstar Games",
+        "Square Enix",
+        "Sony"
       ]
     },
     {
@@ -37,8 +38,8 @@
       "secondary": "#BFD5E0",
       "mainBg": "#A3161D",
       "contrastText": "#292526",
-      "wrong": "#FF5722",
-      "success": "#4CAF50"
+      "wrong": "#E20000",
+      "success": "#43A817"
     },
     "borderRadius": "4px"
   }
