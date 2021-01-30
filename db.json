@@ -1,14 +1,15 @@
 {
-  "bg": "https://cdn.pocket-lint.com/r/s/970x/assets/images/141346-games-review-review-assassin-s-creed-origins-gameplay-preview-image1-0thtzsbqel-jpg.webp",
-  "bg2":"https://theflame.unishanoi.org/wp-content/uploads/2014/12/Assassin.jpg",
-  "bg3":"https://steamuserimages-a.akamaihd.net/ugc/448490901528242730/AFD44E23410D73628A6D6CCA431B4C0AFD330A34/",
+  "bgQ": "https://cdn.pocket-lint.com/r/s/970x/assets/images/141346-games-review-review-assassin-s-creed-origins-gameplay-preview-image1-0thtzsbqel-jpg.webp",
+  "bgI":"https://images-ext-2.discordapp.net/external/QaNAfLUPXkGNYNV1RgvYke4XXEvJmcV39RPQl6KvLRw/https/i.ibb.co/9Y6c6sQ/Walpaper-Nathan.png?width=761&height=427",
+  "bgL":"https://www.gif-maniac.com/gifs/49/48504.gif",
+  "logo":"https://images-ext-2.discordapp.net/external/tpumjUQ9aJEgRc8apTfDMr_zchb9WAzhI3Ghr2taTFU/https/i.ibb.co/yYSG24s/Logo-Assassins-S-Creed.png?width=400&height=240",
   "ico": "https://cdn.worldvectorlogo.com/logos/assassins-creed-1.svg",
-  "title": "Quiz Assasin's Creed",
+  "title": "ASSASSIN'S QUIIZ ",
   "description": "Teste os seus conhecimentos sobre Assasin's Creed e vamos ver quantos anos você consegue corrigir",
   "questions": [
     {
       "image": "https://conteudo.imguol.com.br/c/entretenimento/70/2020/05/14/assassins-creed-1589491924728_v2_600x1.jpg",
-      "title": "Qual a desenvolvedora do Assasine's Creed",
+      "title": "Qual a desenvolvedora do Assasin's Creed",
       "description": "Essa é pra aquecer",
       "answer": 0,
       "alternatives": [
@@ -30,16 +31,24 @@
     }
   ],
   "external": [
-    ""
+    "https://thelastofus-quiz.rhafaelcosta.vercel.app/",
+    "https://aluraquiz-base.broncs.vercel.app/",
+    "https://alura-quiz.lucasketelhut.vercel.app/",
+    "https://quiz-games.gabrielwolf-dev.vercel.app/",
+    "https://quiz-star-wars.mattheussal.vercel.app/",
+    "https://daluluquiz.vercel.app/",
+    "https://quiz-imersao-react.olucasalves.vercel.app/",
+    "https://aluraquiz-css.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {
-      "primary": "#B9BDBE",
-      "secondary": "#BFD5E0",
-      "mainBg": "#A3161D",
-      "contrastText": "#292526",
-      "wrong": "#E20000",
-      "success": "#43A817"
+      "primary": "#2a2b2f", 
+      "secondary": "#f0f3f4",
+      "tertiary": "#84171A",
+      "mainBg": "#FFFFFF",
+      "contrastText": "#000000",
+      "wrong": "42,43,47",
+      "success": "240,243,244"
     },
     "borderRadius": "4px"
   }

@@ -13,9 +13,8 @@ const QuizContainer = styled.div`
 
 QuizContainer.Form = styled.div` 
   width: 90%; //largura
-  max-width: 280px; //comprimento
-  padding-top: 225px; //altura
-  margin: auto 1%;
+  max-width: 310px; //comprimento
+  margin: 0px auto 0;
   @media screen and (max-width: 500px) {
     margin: auto;
     padding: 15px;

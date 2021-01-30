@@ -29,14 +29,15 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const Button = styled.button`
-  background-color: ${({ theme }) => theme.colors.secondary};
-  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => theme.colors.tertiary};
+  color: ${({ theme }) => theme.colors.mainBg};
   border-radius: ${({ theme }) => theme.borderRadius};
-  border: 0;
+  border: 2px solid transparent;
   width: 100%;
   padding: 10px 16px;
   font-weight: bold;
   font-size: 14px;
+  font-family: 'Crimson Text', serif;
   line-height: 1;
   text-transform: uppercase;
   outline: 0;
@@ -47,7 +48,7 @@ const Button = styled.button`
     opacity: .5;
   }
   &:disabled {
-    background-color: #979797;
+    background-color: ${({ theme }) => theme.colors.primary};
     cursor: not-allowed;
   }
 `;

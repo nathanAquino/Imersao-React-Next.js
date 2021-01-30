@@ -6,14 +6,14 @@ const AlternativesForm = styled.form`
       background-color: ${({ theme }) => theme.colors.primary};
       
       &[data-status="SUCCESS"] {
-        background-color: ${({ theme }) => theme.colors.success};
+        background-color: ${({ theme }) => theme.colors.sucess};
       }
       &[data-status="ERROR"] {
         background-color: ${({ theme }) => theme.colors.wrong};
       }
     }
     &:focus {
-      opacity: 1;
+      opacity: 80;
     } 
   }
   button {

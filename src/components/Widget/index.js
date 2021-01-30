@@ -4,21 +4,24 @@ const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary}; // cor da borda
-  background-color: ${({ theme }) => theme.colors.primary}; //cor do fundo do painel 
+  background-color: ${({ theme }) => theme.colors.secondary}; //cor do fundo do painel 
   border-radius: 10px;
+  border: 2px solid transparent;
   overflow: hidden;
   h1, h2, h3 {
     font-size: 25px;
     font-weight: 700;
+    font-family: 'Crimson Text', serif;
     line-height: 1;
     margin-bottom: 0;
-    color: #282526;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    color: #f0f3f4;
     text-align:center;
+    width: 100%;
   }
   p {
     font-size: 18px;
     font-weight: 400;
+    font-family: 'Crimson Text', serif;
     line-height: 1;
     color:#9D353D;
     text-align: center;
@@ -71,7 +74,7 @@ Widget.Header = styled.header`
   justify-content: flex-start;
   align-items: center;
   padding: 18px 32px;
-  background-color: ${({ theme }) => theme.colors.mainBg};
+  background-color: ${({ theme }) => theme.colors.primary};
   
   * {
     margin: 0;

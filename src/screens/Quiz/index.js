@@ -6,14 +6,14 @@ import React from 'react';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizLogo from '../src/components/QuizLogo';
-import GitHuberCorner from '../src/components/GitHuberCorner';
-import QuizContainer from '../src/components/QuizContainer';
-import Button from '../src/components/Button';
-import AlternativesForm from '../src/components/AlternativeForm';
+// import db from '../../../db.json';
+import Widget from '../../components/Widget';
+import QuizBackground from '../../components/QuizBackground';
+import QuizLogo from '../../components/QuizLogo';
+import GitHuberCorner from '../../components/GitHuberCorner';
+import QuizContainer from '../../components/QuizContainer';
+import Button from '../../components/Button';
+import AlternativesForm from '../../components/AlternativeForm';
 
 function ResultWidget({ results }) {
   const router = useRouter();
@@ -170,14 +170,14 @@ const screenStates = {
   RESULT: 'RESULT',
 };
 
-export default function QuizPage() {
+export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
-  const totalQuestions = db.questions.length;
+  const totalQuestions = externalQuestions.questions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = db.questions[questionIndex];
-
+  const question = externalQuestions.questions[questionIndex];
+  const bg = externalBg;
   function addResult(result) {
     // results.push(result);
     setResults([
@@ -209,7 +209,7 @@ export default function QuizPage() {
     // setScreenState(screenStates.RESULT);
   }
   return (
-    <QuizBackground backgroundImage={db.bg}>
+    <QuizBackground backgroundImage={bg}>
       <Head>
         <title>Assasin`s Creed</title>
       </Head>
