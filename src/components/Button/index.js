@@ -32,6 +32,7 @@ const Button = styled.button`
   background-color: ${({ theme }) => theme.colors.tertiary};
   color: ${({ theme }) => theme.colors.mainBg};
   border-radius: ${({ theme }) => theme.borderRadius};
+  margin:5px 0;
   border: 2px solid transparent;
   width: 100%;
   padding: 10px 16px;

@@ -21,7 +21,7 @@ function ResultWidget({ results }) {
   return (
     <Widget>
       <Widget.Header>
-        <BackLinkArrow href="/" />
+        <BackLinkArrow href="/pagina_principal" />
         Tela de Resultado:
       </Widget.Header>
 
@@ -61,7 +61,9 @@ function ResultWidget({ results }) {
 function LoadingWidget() {
   return (
     <Widget>
-      <Widget.Header>Carregando...</Widget.Header>
+      <Widget.Header>
+        <h1>CARREGANDO O ANIMUS...</h1>
+      </Widget.Header>
       <Widget.Content>
         <img
           style={{ width: '100%', height: '50%' }}
@@ -81,7 +83,7 @@ function QuestionWidget({
   addResult,
 }) {
   const [selectAlternative, setSelectAlternative] = React.useState(undefined);
-  const [isQuestionSubmited, setQuestionIsSubmited] = React.useState();
+  const [isQuestionSubmited, setQuestionIsSubmited] = React.useState(false);
   const questionId = `question__${questionIndex}`;
   const isCorrect = selectAlternative === question.answer;
   const hasAlternativeSelected = selectAlternative !== undefined;
@@ -104,9 +106,9 @@ function QuestionWidget({
         src={question.image}
       />
       <Widget.Content>
-        <h2>
+        <h3>
           {question.title}
-        </h2>
+        </h3>
         <p>
           {question.description}
         </p>
@@ -140,7 +142,7 @@ function QuestionWidget({
                   style={{ display: 'none' }}
                   id={alternativeId}
                   name={questionId}
-                  onChange={() => setSelectAlternative(alternativeIndex)}
+                  onClick={() => setSelectAlternative(alternativeIndex)}
                   type="radio"
                 />
                 {alternative}
@@ -215,7 +217,7 @@ export default function QuizPage() {
       <Head>
         <title>Assasin`s Creed</title>
       </Head>
-      <QuizContainer>
+      <QuizContainer.Result>
         <QuizLogo />
         {screenState === screenStates.QUIZ && (
           <QuestionWidget
@@ -230,9 +232,8 @@ export default function QuizPage() {
         {screenState === screenStates.LOADING && <LoadingWidget />}
 
         {screenState === screenStates.RESULT && <ResultWidget results={results} />}
-      </QuizContainer>
+      </QuizContainer.Result>
       <GitHuberCorner projectUrl="https://github.com/nathanAquino" />
     </QuizBackground>
   );
 }
-

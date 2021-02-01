@@ -173,10 +173,10 @@ const screenStates = {
 export default function QuizPage({ externalQuestions, externalBg }) {
   const [screenState, setScreenState] = React.useState(screenStates.LOADING);
   const [results, setResults] = React.useState([]);
-  const totalQuestions = externalQuestions.questions.length;
+  const totalQuestions = externalQuestions.length;
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const questionIndex = currentQuestion;
-  const question = externalQuestions.questions[questionIndex];
+  const question = externalQuestions[questionIndex];
   const bg = externalBg;
   function addResult(result) {
     // results.push(result);

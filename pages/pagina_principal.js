@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-curly-brace-presence */
 /* eslint-disable react/style-prop-object */
 /* eslint-disable no-var */
 import Head from 'next/head';
@@ -8,14 +9,16 @@ import { useRouter } from 'next/router';
 import db from '../db.json';
 import Widget from '../src/components/Widget';
 import QuizBackground from '../src/components/QuizBackground';
-// import Footer from '../src/components/Footer';
+import Footer from '../src/components/Footer';
 import GitHuberCorner from '../src/components/GitHuberCorner';
 import QuizLogo from '../src/components/QuizLogo';
 import Button from '../src/components/Button';
 // import Name from '../src/components/Name';
 import Input from '../src/components/Input';
 import QuizContainer from '../src/components/QuizContainer';
+// import App from '../src/components/Animation';
 // import Link from '../src/components/Link';
+
 // const Title = styled.h1` nao sera mais necessario
 //  font-size: 50px;
 //  color: ${({ theme }) => theme.colors.primary};
@@ -97,54 +100,13 @@ export default function Home() {
                 Jogar
               </Button> */}
             </form>
+            <Button onClick={() => (router.push('/quizes_galera'))}>
+              QUIZ DOS OUTROS BROTHERS
+            </Button>
           </Widget.Content>
         </Widget>
       </QuizContainer.Form>
-      {/* <QuizContainer>
-        <Widget
-          as={motion.section}
-          transition={{ delay: 0.5, duration: 0.5 }}
-          variants={{
-            show: { opacit: 10, y: '0' },
-            hidden: { opacity: 10, y: '100%' },
-          }}
-          initial="hidden"
-          animate="show"
-        >
-          <Widget.Header>
-            <h1>Quiz dos brothers</h1>
-          </Widget.Header>
-          <Widget.Content>
-            <ul>
-              {db.external.map((linKExterno) => {
-                const [projectName, gitHubUser] = linKExterno
-                  .replace(/\//g, '')
-                  .replace('htpps:', '')
-                  .replace('verce.app', '')
-                  .split('.');
-                return (
-                  <li key={linKExterno}>
-                    <Widget.Topic
-                      as={Link}
-                      href={`/quiz/${projectName}___${gitHubUser}`}
-                    >
-                      {`${gitHubUser}/${projectName}`}
-                    </Widget.Topic>
-                  </li>
-                );
-              })}
-            </ul>
-            {/* <ul>
-              <li><a href="https://thelastofus-quiz.rhafaelcosta.vercel.app/">The Last of US</a></li>
-              <li><a href="https://quiz-games.gabrielwolf-dev.vercel.app/">Quiz de Games</a></li>
-              <li><a href="https://quiz-star-wars.mattheussal.vercel.app/">Star Wars</a></li>
-              <li><a href="https://quiz-with-nextjs.davifelix.vercel.app/">Vingadores</a></li>
-            </ul> */}
-      {/* <p>SURREAL O QUE ESSE PESSOAL QUE CONHECI NA IMERSÃO FIZERAM!!</p>
-          </Widget.Content>
-        </Widget>
-        <Footer />
-      </QuizContainer> */}
+      <Footer />
       <GitHuberCorner projectUrl="https://github.com/nathanAquino" />
     </QuizBackground>
   );

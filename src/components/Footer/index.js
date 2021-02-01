@@ -1,12 +1,30 @@
+/* eslint-disable react/react-in-jsx-scope */
 import styled from 'styled-components';
 
-// src/components/Footer/index.js
 const FooterWrapper = styled.footer`
+  position: absolute;
+  bottom: 0;
+  border: 0;
+  right: 0;
+  z-index: 20;
   background-color: #00000070;
-  padding: 20px;
+  padding:  5px 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  flex-direction:row;
+  transform: translateX(430px);
+  transition: .5s;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
-  border-radius: 4px; 
+  border-radius: 4px;
+  &:hover{
+    transform: translateX(0px);
+    transition: .5s;
+  }
   img {
     width: 58px;
     margin-right: 23px;

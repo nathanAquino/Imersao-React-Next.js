@@ -4,6 +4,7 @@ import styled from 'styled-components';
 const QuizBackground = styled.div`
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
   background-size: cover;
   background-position: center;
   background-image: url(${({ backgroundImage }) => backgroundImage});

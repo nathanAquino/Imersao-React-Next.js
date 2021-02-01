@@ -16,9 +16,9 @@ const SVG = styled.svg`
 
 export default function BackLinkArrow({ href }) {
   return (
-    <StyledLink href={href} style={{ width: '24px', height: '24px', display: 'inline-block' }}>
-      <SVG xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-        <path fillRule="evenodd" clipRule="evenodd" d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="white" fillOpacity="0.87" />
+    <StyledLink href={href} style={{ width: '30px', height: '30px', display: 'inline-block' }}>
+      <SVG xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none">
+        <path fillRule="evenodd" clipRule="evenodd" d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="red" fillOpacity="0.87" />
       </SVG>
     </StyledLink>
   );
